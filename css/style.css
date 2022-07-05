@@ -1,0 +1,3823 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --primary-color1: #f6655f;
+    --primary-color2: #eb5747;
+    --primary-color3: #f1908c;
+    --primary-color4: #fcc0bd;
+    --dark-color1: #171616;
+    --dark-color2: #423f3f;
+    --dark-color3: #423f3fc9;
+    --dark-color4: #858080;
+    --white-color: #fff;
+    --white-color-light: #ffffffb9;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    overflow-X: hidden;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+nav .logo img{
+    width: 25px;
+}
+
+nav .logo h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color1);
+}
+
+nav .hamburger{
+    display: none;
+}
+
+nav .menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .menu ul li{
+    margin: 10px;
+    list-style: none;
+    transition: .2s;
+}
+
+nav .menu li:hover{
+    transform: translateY(-1px);
+}
+
+nav .menu li a{
+    background-color: var(--primary-color1);
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+
+/* SECTION1 */
+.section1{
+    width: 100%;
+    background-color: var(--primary-color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+    height: 65vh;
+}
+
+.section1 .section1-text{
+    margin-left: 20px;
+}
+
+.section1 .section1-text h1{
+    word-spacing: 6px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.section1 .section1-text p{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section1 .section1-text button{
+    margin-top: 35px;
+    color: var(--white-color);
+    background-color: var(--primary-color1);
+    border: 2px solid var(--white-color);
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: .2s;
+}
+
+.section1 .section1-text button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.section1 .section1-text button i{
+    color: var(--white-color);
+    font-size: 10px;
+}
+
+
+
+/* ABOUT RIBI */
+.section2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 4%;
+    gap: 50px;
+    background-color: var(--primary-color4);
+}
+
+.section2 .section2-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.section2 .section2-boxes-1{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-boxes-2{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-box-content{
+    border: 1px solid var(--primary-color1);
+    width: 200px;
+    height: 180px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.section2 .section2-box-content:hover{
+    transform: translateY(-5px);
+}
+
+.section2 .section2-box-content img{
+    width: 85px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+}
+
+.section2 .section2-box-content .find-blood{
+    width: 65px;
+    margin: 35px auto 0 auto;
+}
+
+.section2 .section2-box-content p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* ABOUT RIBI TEXT */
+.section2 .section2-text{
+    margin-top: 30px;
+}
+
+.section2 .section2-text h2{
+    color: var(--primary-color2);
+    font-weight: 700;
+}
+
+.section2 .section2-text p{
+    color: var(--dark-color1);
+    line-height: 25px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.section2 .section2-text button{
+    background-color: var(--primary-color2);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: var(--white-color);
+    margin-top: 30px;
+    transition: .2s;
+}
+
+.section2 .section2-text button i{
+    font-size: 10px;
+}
+
+.section2 .section2-text button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    background-color: var(--primary-color1);
+}
+
+/* BLOOD TYPES */
+.section3{
+    background-color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section3 .section3-title h2{
+    color: var(--primary-color2);
+    text-align: center;
+}
+
+.section3 .section3-boxes-1{
+    display: flex;
+    width: 67%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-boxes-2{
+    display: flex;
+    width: 67%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-box-content{
+    border-radius: 10px;
+    width: 130px;
+    height: 120px;
+    margin: 50px 30px;
+    background-color: var(--white-color);
+    border: 2px soild var(--primary-color4);
+    box-shadow: 0px 0px 10px var(--primary-color1);
+    transition: .4s;
+}
+
+.section3 .section3-box-content:hover{
+    transform: translateY(-5%);
+}
+
+.section3 .section3-box-content img{
+    padding-top: 10px;
+    width: 60px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* DONATIONS */
+.section4{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.section4 .section4-title p{
+    text-align: center;
+    color: var(--primary-color2);
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.section4 .section4-boxes{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.section4 .section4-box-content{
+    background-color: var(--primary-color1);
+    margin: 0px 30px;
+    width: 45%;
+    height: 30vh;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.section4 .section4-box-content:hover{
+    border: 1px solid var(--primary-color3);
+}
+
+.section4 .section4-box-content h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    color: var(--white-color);
+}
+
+.section4 .section4-box-content p{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    color: var(--white-color);
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.section4 .section4-box-content .donate-p{
+    margin-bottom: 10px;
+}
+
+.section4 .section4-box-content a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.section4 .section4-box-content a i{
+    font-size: 10px;
+}
+
+.section4 .section4-box-content a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* HOW IT WORKS */
+.section5{
+    width: 100%;
+    margin-top: 50px;
+    background-color: var(--primary-color4);
+}
+
+.section5 .section5-title h2{
+    text-align: center;
+    color: var(--primary-color2);
+    padding-top: 30px;
+    font-weight: 700;
+}
+
+.section5 .section5-contents{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 10%;
+}
+
+.section5 .section5-img{
+    width: 70%;
+}
+
+.section5 .section5-img img{
+    width: 370px;
+    border-radius: 7px;
+    border: 1px solid var(--primary-color3);
+    transition: .5s;
+}
+
+.section5 .section5-img img:hover{
+    transform: translateY(-2%);
+    box-shadow: 2px 5px 30px 5px var(--primary-color1);
+}
+
+.section5 .section5-texts{
+    margin: 0px 0 0 10%;
+    width: 60%;
+}
+
+.section5 .section5-texts p{
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.section5 .section5-texts ul{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.section5 .section5-texts li{
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 6px;
+}
+
+.section5 .section5-texts li:before{
+    content: '\2022';
+    color: var(--primary-color1);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--dark-color1);
+    color: var(--white-color);
+}
+
+footer h2{
+    text-align: center;
+    padding-top: 6%;
+    font-weight: 200;
+}
+
+footer p{
+    margin-top: 15px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--white-color-light);
+}
+
+footer .footer-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6%;
+}
+
+footer .footer-buttons button{
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: var(--dark-color1);
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 12px;
+    transition: .4s ease-in-out;
+}
+
+
+footer .footer-buttons button:hover{
+    cursor: pointer;
+    background-color: var(--primary-color1);
+    border: 2px solid var(--primary-color4);
+    color: var(--dark-color1);
+}
+
+footer hr{
+    margin: 6% auto;
+    border: 1px solid var(--white-color-light);
+    width: 70%;
+}
+
+footer .footer-bottom{
+    height: 15vh;
+    margin-top: -5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .footer-bottom .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+footer .footer-bottom .logo img{
+    width: 25px;
+}
+
+footer .footer-bottom .logo h1{
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--white-color);
+}
+
+footer .rights-reserved p{
+    color: var(--white-color-light);
+    margin-top: -4px;
+}
+
+footer .social-icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -4px;
+}
+
+footer .social-icons li{
+    list-style: none; 
+}
+
+footer .social-icons li i{
+    font-size: 8px;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    padding: 5px;
+    transition: .2s ease-in-out;
+}
+
+footer .social-icons li i:hover{
+    font-size: 10px;
+    cursor: pointer;
+    font-size: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1065px) {
+body{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+nav .logo img{
+    width: 25px;
+}
+
+nav .logo h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color1);
+}
+
+nav .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .menu li{
+    margin: 10px;
+    list-style: none;
+    transition: .2s;
+}
+
+nav .menu li:hover{
+    transform: translateY(-1px);
+}
+
+nav .menu li a{
+    background-color: var(--primary-color1);
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+
+/* SECTION1 */
+.section1{
+    width: 100%;
+    background-color: var(--primary-color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95vh;
+}
+
+.section1 .section1-text{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.section1 .section1-text h1{
+    word-spacing: 3px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.section1 .section1-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section1 .section1-text button{
+    margin-top: 45px;
+    color: var(--white-color);
+    background-color: var(--primary-color1);
+    border: 2px solid var(--white-color);
+    border-radius: 25px;
+    padding: 15px 60px;
+    transition: .2s;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section1 .section1-text button i{
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.section1 .section1-img{
+    margin-top: 45px;
+}
+
+.section1 .section1-img img{
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/* ABOUT RIBI */
+.section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 20px 4%;
+    gap: 50px;
+    background-color: var(--primary-color4);
+}
+
+.section2 .section2-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.section2 .section2-boxes-1{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-boxes-2{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-box-content{
+    border: 1px solid var(--primary-color1);
+    width: 200px;
+    height: 180px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.section2 .section2-box-content:hover{
+    transform: translateY(-5px);
+}
+
+.section2 .section2-box-content img{
+    width: 85px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+}
+
+.section2 .section2-box-content .find-blood{
+    width: 65px;
+    margin: 35px auto 0 auto;
+}
+
+.section2 .section2-box-content p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* ABOUT RIBI TEXT */
+.section2 .section2-text{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.section2 .section2-text h2{
+    color: var(--primary-color2);
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline var(--primary-color2);
+}
+
+.section2 .section2-text p{
+    color: var(--dark-color1);
+    line-height: 25px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.section2 .section2-text button{
+    background-color: var(--primary-color2);
+    border: none;
+    padding: 20px 80px;
+    border-radius: 25px;
+    color: var(--white-color);
+    margin-top: 30px;
+    transition: .2s;
+}
+
+.section2 .section2-text button i{
+    font-size: 10px;
+}
+
+.section2 .section2-text button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    background-color: var(--primary-color1);
+}
+
+
+/* BLOOD TYPES */
+.section3{
+    background-color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section3 .section3-title h2{
+    color: var(--primary-color2);
+    text-align: center;
+    font-size: 40px;
+}
+
+.section3 .section3-boxes-1{
+    display: flex;
+    width: 67%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-boxes-2{
+    display: flex;
+    width: 67%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-box-content{
+    border-radius: 10px;
+    width: 130px;
+    height: 120px;
+    margin: 50px 30px;
+    background-color: var(--white-color);
+    border: 2px soild var(--primary-color4);
+    box-shadow: 0px 0px 10px var(--primary-color1);
+    transition: .4s;
+}
+
+
+.section3 .section3-box-content img{
+    padding-top: 10px;
+    width: 60px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* DONATIONS */
+.section4{
+    background-color: var(--primary-color1);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 55vh;
+}
+
+.section4 .section4-title p{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+    padding-top: 30px;
+}
+
+.section4 .section4-boxes{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1%;
+}
+
+.section4 .section4-box-content{
+    background-color: var(--white-color);
+    margin: 0px 30px;
+    width: 70%;
+    height: 35vh;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.section4 .section4-box-content h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    color: var(--dark-color1);
+}
+
+.section4 .section4-box-content p{
+    margin-top: 6px;
+    text-align: center;
+    padding: 20px 15px 40px 15px;
+    color: var(--dark-color4);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.section4 .section4-box-content .donate-p{
+    margin-bottom: 15px;
+}
+
+.section4 .section4-box-content a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section4 .section4-box-content a i{
+    font-size: 15px;
+}
+
+.section4 .section4-box-content a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* HOW IT WORKS */
+.section5{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin-top: -30px;
+    background-color: var(--primary-color4);
+}
+
+.section5 .section5-title h2{
+    text-align: center;
+    color: var(--primary-color2);
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.section5 .section5-contents{
+    display: flex;
+    justify-content: center;
+    padding: 40px 10%;
+}
+
+.section5 .section5-img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.section5 .section5-img img{
+    width: 370px;
+    border-radius: 7px;
+    border: 1px solid var(--primary-color3);
+    transition: .5s;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.section5 .section5-texts{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: justify;
+    width: 100%;
+}
+
+.section5 .section5-texts p{
+    font-weight: 700;
+    font-size: 17px;
+    text-align: justify;
+    margin-left: 43px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.section5 .section5-texts ul{
+    display: block;
+    justify-content: space-between;
+    text-align: justify;
+    margin-left: 70px;
+}
+
+.section5 .section5-texts li{
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section5 .section5-texts li:before{
+    content: '\2022';
+    color: var(--primary-color1);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 25px;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--dark-color1);
+    color: var(--white-color);
+}
+
+footer h2{
+    text-align: center;
+    padding-top: 6%;
+    font-weight: 200;
+}
+
+footer p{
+    margin-top: 15px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--white-color-light);
+}
+
+footer .footer-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6%;
+}
+
+footer .footer-buttons button{
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: var(--dark-color1);
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 12px;
+    transition: .4s ease-in-out;
+}
+
+
+footer .footer-buttons button:hover{
+    cursor: pointer;
+    background-color: var(--primary-color1);
+    border: 2px solid var(--primary-color4);
+    color: var(--dark-color1);
+}
+
+footer hr{
+    margin: 6% auto;
+    border: 1px solid var(--white-color-light);
+    width: 70%;
+}
+
+footer .footer-bottom{
+    height: 15vh;
+    margin-top: -5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .footer-bottom .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+footer .footer-bottom .logo img{
+    width: 25px;
+}
+
+footer .footer-bottom .logo h1{
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--white-color);
+}
+
+footer .rights-reserved p{
+    color: var(--white-color-light);
+    margin-top: -4px;
+}
+
+footer .social-icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -4px;
+}
+
+footer .social-icons li{
+    list-style: none; 
+}
+
+footer .social-icons li i{
+    font-size: 8px;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    padding: 5px;
+    transition: .2s ease-in-out;
+}
+
+footer .social-icons li i:hover{
+    font-size: 10px;
+    cursor: pointer;
+    font-size: 9px;
+}
+
+}
+
+
+@media screen and (max-width: 830px) {
+body{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+nav .logo img{
+    width: 25px;
+}
+
+nav .logo h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color1);
+}
+
+nav .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .menu li{
+    margin: 10px;
+    list-style: none;
+    transition: .2s;
+}
+
+nav .menu li:hover{
+    transform: translateY(-1px);
+}
+
+nav .menu li a{
+    background-color: var(--primary-color1);
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+
+/* SECTION1 */
+.section1{
+    width: 100%;
+    background-color: var(--primary-color1);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.section1 .section1-text{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.section1 .section1-text h1{
+    word-spacing: 3px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.section1 .section1-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section1 .section1-text button{
+    margin-top: 45px;
+    color: var(--white-color);
+    background-color: var(--primary-color1);
+    border: 2px solid var(--white-color);
+    border-radius: 25px;
+    padding: 15px 60px;
+    transition: .2s;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section1 .section1-text button i{
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.section1 .section1-img{
+    margin-top: 45px;
+}
+
+.section1 .section1-img img{
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/* ABOUT RIBI */
+.section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 20px 4%;
+    gap: 50px;
+    background-color: var(--primary-color4);
+}
+
+.section2 .section2-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.section2 .section2-boxes-1{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-boxes-2{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-box-content{
+    border: 1px solid var(--primary-color1);
+    width: 200px;
+    height: 180px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.section2 .section2-box-content:hover{
+    transform: translateY(-5px);
+}
+
+.section2 .section2-box-content img{
+    width: 85px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+}
+
+.section2 .section2-box-content .find-blood{
+    width: 65px;
+    margin: 35px auto 0 auto;
+}
+
+.section2 .section2-box-content p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* ABOUT RIBI TEXT */
+.section2 .section2-text{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.section2 .section2-text h2{
+    color: var(--primary-color2);
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline var(--primary-color2);
+}
+
+.section2 .section2-text p{
+    color: var(--dark-color1);
+    line-height: 25px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.section2 .section2-text button{
+    background-color: var(--primary-color2);
+    border: none;
+    padding: 20px 80px;
+    border-radius: 25px;
+    color: var(--white-color);
+    margin-top: 30px;
+    transition: .2s;
+}
+
+.section2 .section2-text button i{
+    font-size: 10px;
+}
+
+.section2 .section2-text button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    background-color: var(--primary-color1);
+}
+
+
+/* BLOOD TYPES */
+.section3{
+    background-color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section3 .section3-title h2{
+    color: var(--primary-color2);
+    text-align: center;
+    font-size: 40px;
+}
+
+.section3 .section3-boxes-1{
+    display: flex;
+    width: 67%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-boxes-2{
+    display: flex;
+    width: 67%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-box-content{
+    border-radius: 10px;
+    width: 130px;
+    height: 120px;
+    margin: 50px 30px;
+    background-color: var(--white-color);
+    border: 2px soild var(--primary-color4);
+    box-shadow: 0px 0px 10px var(--primary-color1);
+    transition: .4s;
+}
+
+
+.section3 .section3-box-content img{
+    padding-top: 10px;
+    width: 60px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* DONATIONS */
+.section4{
+    background-color: var(--primary-color1);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 55vh;
+}
+
+.section4 .section4-title p{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+    padding-top: 30px;
+}
+
+.section4 .section4-boxes{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1%;
+}
+
+.section4 .section4-box-content{
+    background-color: var(--white-color);
+    margin: 0px 30px;
+    width: 70%;
+    height: 35vh;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.section4 .section4-box-content h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    color: var(--dark-color1);
+}
+
+.section4 .section4-box-content p{
+    margin-top: 6px;
+    text-align: center;
+    padding: 20px 15px 40px 15px;
+    color: var(--dark-color4);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.section4 .section4-box-content .donate-p{
+    margin-bottom: 15px;
+}
+
+.section4 .section4-box-content a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section4 .section4-box-content a i{
+    font-size: 15px;
+}
+
+.section4 .section4-box-content a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* HOW IT WORKS */
+.section5{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: -30px;
+    background-color: var(--primary-color4);
+    text-align: center;
+}
+
+.section5 .section5-title h2{
+    text-align: center;
+    color: var(--primary-color2);
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.section5 .section5-contents{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 40px 15%;
+}
+
+.section5 .section5-img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section5 .section5-img img{
+    width: 80%;
+    border-radius: 7px;
+    border: 1px solid var(--primary-color3);
+    transition: .5s;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.section5 .section5-texts{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.section5 .section5-texts p{
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+}
+
+.section5 .section5-texts ul{
+    position: absolute;
+    top: 73%;
+    right: 0;
+    left: 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.section5 .section5-texts li{
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section5 .section5-texts li:before{
+    content: '\2022';
+    color: var(--primary-color1);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 25px;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--dark-color1);
+    color: var(--white-color);
+}
+
+footer h2{
+    text-align: center;
+    padding-top: 6%;
+    font-weight: 200;
+}
+
+footer p{
+    margin-top: 15px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--white-color-light);
+}
+
+footer .footer-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6%;
+}
+
+footer .footer-buttons button{
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: var(--dark-color1);
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 12px;
+    transition: .4s ease-in-out;
+}
+
+
+footer .footer-buttons button:hover{
+    cursor: pointer;
+    background-color: var(--primary-color1);
+    border: 2px solid var(--primary-color4);
+    color: var(--dark-color1);
+}
+
+footer hr{
+    margin: 6% auto;
+    border: 1px solid var(--white-color-light);
+    width: 70%;
+}
+
+footer .footer-bottom{
+    height: 15vh;
+    margin-top: -5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .footer-bottom .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+footer .footer-bottom .logo img{
+    width: 25px;
+}
+
+footer .footer-bottom .logo h1{
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--white-color);
+}
+
+footer .rights-reserved p{
+    color: var(--white-color-light);
+    margin-top: -4px;
+}
+
+footer .social-icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -4px;
+}
+
+footer .social-icons li{
+    list-style: none; 
+}
+
+footer .social-icons li i{
+    font-size: 8px;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    padding: 5px;
+    transition: .2s ease-in-out;
+}
+
+footer .social-icons li i:hover{
+    font-size: 10px;
+    cursor: pointer;
+    font-size: 9px;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+body{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+nav .logo img{
+    width: 25px;
+}
+
+nav .hamburger{
+    display: block;
+}
+
+nav .hamburger i{
+    font-size: 23px;
+    transition: .3s;
+}
+
+nav .hamburger i:hover{
+    font-size: 24px;
+    transform: rotate(360deg);
+}
+
+nav .hamburger .times{
+    display: none;
+}
+
+nav .menu{
+    background-color: var(--white-color);
+    width: 100%;
+    height: 0;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 1.85%;
+    left: 0;
+    right: 0;
+    transition: .1s;
+}
+
+nav .menu ul{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 0;
+    margin-top: 0;
+    display: none;
+    text-align: center;
+    padding-top: 50px;
+}
+
+nav .menu li{
+    padding-top: 100px;
+    list-style: none;
+    transition: .2s;
+}
+
+nav .menu li a{
+    background-color: var(--primary-color1);
+    border-radius: 25px;
+    padding: 25px 100px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* SECTION1 */
+.section1{
+    width: 100%;
+    background-color: var(--primary-color1);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.section1 .section1-text{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.section1 .section1-text h1{
+    word-spacing: 3px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.section1 .section1-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section1 .section1-text button{
+    margin-top: 45px;
+    color: var(--white-color);
+    background-color: var(--primary-color1);
+    border: 2px solid var(--white-color);
+    border-radius: 25px;
+    padding: 15px 60px;
+    transition: .2s;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section1 .section1-text button i{
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.section1 .section1-img{
+    margin-top: 45px;
+}
+
+.section1 .section1-img img{
+    width: 400px;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/* ABOUT RIBI */
+.section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 20px 4%;
+    gap: 50px;
+    background-color: var(--primary-color4);
+}
+
+.section2 .section2-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.section2 .section2-boxes-1{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-boxes-2{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-box-content{
+    border: 1px solid var(--primary-color1);
+    width: 200px;
+    height: 180px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.section2 .section2-box-content:hover{
+    transform: translateY(-5px);
+}
+
+.section2 .section2-box-content img{
+    width: 85px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+}
+
+.section2 .section2-box-content .find-blood{
+    width: 65px;
+    margin: 35px auto 0 auto;
+}
+
+.section2 .section2-box-content p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* ABOUT RIBI TEXT */
+.section2 .section2-text{
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.section2 .section2-text h2{
+    color: var(--primary-color2);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline var(--primary-color2);
+}
+
+.section2 .section2-text p{
+    color: var(--dark-color1);
+    line-height: 25px;
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.section2 .section2-text button{
+    background-color: var(--primary-color2);
+    border: none;
+    padding: 20px 80px;
+    border-radius: 25px;
+    color: var(--white-color);
+    margin-top: 30px;
+    transition: .2s;
+}
+
+.section2 .section2-text button i{
+    font-size: 10px;
+}
+
+.section2 .section2-text button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    background-color: var(--primary-color1);
+}
+
+/* BLOOD TYPES */
+.section3{
+    background-color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section3 .section3-title h2{
+    color: var(--primary-color2);
+    text-align: center;
+    font-size: 40px;
+}
+
+.section3 .section3-boxes-1{
+    display: flex;
+    width: 67%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-boxes-2{
+    display: flex;
+    width: 67%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-box-content{
+    display: flex;
+    border-radius: 10px;
+    width: 130px;
+    height: 120px;
+    margin: 50px 30px;
+    background-color: var(--white-color);
+    border: 2px soild var(--primary-color4);
+    box-shadow: 0px 0px 10px var(--primary-color1);
+    transition: .4s;
+}
+
+
+.section3 .section3-box-content img{
+    padding-top: 10px;
+    width: 60px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* DONATIONS */
+.section4{
+    background-color: var(--primary-color1);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 100vh;
+}
+
+.section4 .section4-title p{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 30px 20px 0 20px;
+}
+
+.section4 .section4-boxes{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 2%;
+}
+
+.section4 .section4-box-content{
+    background-color: var(--white-color);
+    margin: 0px 30px;
+    width: 80%;
+    height: 35vh;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.section4 .section4-box-content h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    color: var(--dark-color1);
+}
+
+.section4 .section4-box-content p{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    color: var(--dark-color4);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.section4 .section4-box-content .donate-p{
+    margin-bottom: 35px;
+}
+
+.section4 .section4-box-content a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section4 .section4-box-content a i{
+    font-size: 15px;
+}
+
+.section4 .section4-box-content a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* HOW IT WORKS */
+.section5{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: -30px;
+    background-color: var(--primary-color4);
+}
+
+.section5 .section5-title h2{
+    text-align: center;
+    color: var(--primary-color2);
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.section5 .section5-contents{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 40px 10%;
+}
+
+.section5 .section5-img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.section5 .section5-img img{
+    width: 330px;
+    border-radius: 7px;
+    border: 1px solid var(--primary-color3);
+    transition: .5s;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.section5 .section5-texts{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: justify;
+    width: 100%;
+}
+
+.section5 .section5-texts p{
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+}
+
+.section5 .section5-texts ul{
+    position: absolute;
+    top: 67%;
+    right: 0;
+    left: 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.section5 .section5-texts li{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section5 .section5-texts li:before{
+    content: '\2022';
+    color: var(--primary-color1);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 25px;
+}
+
+/* FOOTER */
+footer h2{
+    text-align: center;
+    padding-top: 7%;
+    font-weight: 700;
+}
+
+footer p{
+    padding: 20px 50px 0 50px;
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--white-color-light);
+}
+
+footer .footer-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6%;
+}
+
+footer hr{
+    margin: 6% auto;
+    border: 1px solid var(--white-color-light);
+    width: 55%;
+}
+
+footer .footer-bottom{
+    height: 17vh;
+    margin-top: -5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-bottom .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+footer .footer-bottom .logo img{
+    width: 22px;
+}
+
+footer .footer-bottom .logo h1{
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--white-color);
+}
+
+footer .rights-reserved p{
+    color: var(--white-color-light);
+    margin-top: 12px;
+}
+
+footer .social-icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+footer .social-icons li i{
+    font-size: 15px;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    padding: 5px;
+    transition: .2s ease-in-out;
+}
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+body{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+nav .logo img{
+    width: 25px;
+}
+
+nav .hamburger{
+    display: block;
+}
+
+nav .hamburger i{
+    font-size: 23px;
+    transition: .3s;
+}
+
+nav .hamburger i:hover{
+    font-size: 24px;
+    transform: rotate(360deg);
+}
+
+nav .hamburger .times{
+    display: none;
+}
+
+nav .menu{
+    background-color: var(--white-color);
+    width: 100%;
+    height: 0;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 1.85%;
+    left: 0;
+    right: 0;
+    transition: .1s;
+}
+
+nav .menu ul{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 0;
+    margin-top: 0;
+    display: none;
+    text-align: center;
+    padding-top: 50px;
+}
+
+nav .menu li{
+    padding-top: 100px;
+    list-style: none;
+    transition: .2s;
+}
+
+nav .menu li a{
+    background-color: var(--primary-color1);
+    border-radius: 25px;
+    padding: 25px 100px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* SECTION1 */
+.section1{
+    width: 100%;
+    background-color: var(--primary-color1);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.section1 .section1-text{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.section1 .section1-text h1{
+    word-spacing: 3px;
+    font-size: 37px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.section1 .section1-text p{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section1 .section1-text button{
+    margin-top: 45px;
+    color: var(--white-color);
+    background-color: var(--primary-color1);
+    border: 2px solid var(--white-color);
+    border-radius: 25px;
+    padding: 15px 40px;
+    transition: .2s;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section1 .section1-text button i{
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.section1 .section1-img{
+    margin-top: 70px;
+}
+
+.section1 .section1-img img{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/* ABOUT RIBI */
+.section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 20px 4%;
+    gap: 50px;
+    background-color: var(--primary-color4);
+}
+
+.section2 .section2-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.section2 .section2-boxes-1{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-boxes-2{
+    margin: 10px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.section2 .section2-box-content{
+    border: 1px solid var(--primary-color1);
+    width: 160px;
+    height: 180px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.section2 .section2-box-content img{
+    width: 85px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+}
+
+.section2 .section2-box-content .find-blood{
+    width: 65px;
+    margin: 35px auto 0 auto;
+}
+
+.section2 .section2-box-content p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* ABOUT RIBI TEXT */
+.section2 .section2-text{
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.section2 .section2-text h2{
+    color: var(--primary-color2);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline var(--primary-color2);
+}
+
+.section2 .section2-text p{
+    color: var(--dark-color1);
+    line-height: 25px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.section2 .section2-text button{
+    background-color: var(--primary-color2);
+    border: none;
+    padding: 20px 50px;
+    border-radius: 25px;
+    color: var(--white-color);
+    margin-top: 30px;
+    transition: .2s;
+}
+
+.section2 .section2-text button i{
+    font-size: 10px;
+}
+
+.section2 .section2-text button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    background-color: var(--primary-color1);
+}
+
+/* BLOOD TYPES */
+.section3{
+    background-color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section3 .section3-title h2{
+    color: var(--primary-color2);
+    text-align: center;
+    font-size: 40px;
+}
+
+.section3 .section3-boxes-1{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-boxes-2{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-box-content{
+    display: flex;
+    border-radius: 10px;
+    width: 130px;
+    height: 120px;
+    margin: 30px 30px;
+    background-color: var(--white-color);
+    border: 2px soild var(--primary-color4);
+    box-shadow: 0px 0px 10px var(--primary-color1);
+    transition: .4s;
+}
+
+
+.section3 .section3-box-content img{
+    padding-top: 10px;
+    width: 55px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* DONATIONS */
+.section4{
+    background-color: var(--primary-color1);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 100vh;
+}
+
+.section4 .section4-title p{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 30px 20px 0 20px;
+}
+
+.section4 .section4-boxes{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 6%;
+}
+
+.section4 .section4-box-content{
+    background-color: var(--white-color);
+    margin: 0px 30px;
+    width: 80%;
+    height: 35vh;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.section4 .section4-box-content h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    color: var(--dark-color1);
+}
+
+.section4 .section4-box-content p{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    color: var(--dark-color4);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.section4 .section4-box-content .donate-p{
+    margin-bottom: 35px;
+}
+
+.section4 .section4-box-content a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section4 .section4-box-content a i{
+    font-size: 15px;
+}
+
+.section4 .section4-box-content a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* HOW IT WORKS */
+.section5{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: -30px;
+    background-color: var(--primary-color4);
+}
+
+.section5 .section5-title h2{
+    text-align: center;
+    color: var(--primary-color2);
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.section5 .section5-contents{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 40px 10%;
+}
+
+.section5 .section5-img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.section5 .section5-img img{
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid var(--primary-color3);
+    transition: .5s;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.section5 .section5-texts{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: justify;
+    width: 100%;
+}
+
+.section5 .section5-texts p{
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+}
+
+.section5 .section5-texts ul{
+    position: absolute;
+    top: 64%;
+    right: 0;
+    left: 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.section5 .section5-texts li{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section5 .section5-texts li:before{
+    content: '\2022';
+    color: var(--primary-color1);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 25px;
+}
+
+/* FOOTER */
+footer h2{
+    text-align: center;
+    padding: 7% 10px;
+    font-weight: 700;
+}
+
+footer p{
+    padding: 20px 50px 0 50px;
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--white-color-light);
+}
+
+footer .footer-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6%;
+}
+
+footer hr{
+    margin: 6% auto;
+    border: 1px solid var(--white-color-light);
+    width: 55%;
+}
+
+footer .footer-bottom{
+    height: 17vh;
+    margin-top: -5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-bottom .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+footer .footer-bottom .logo img{
+    width: 22px;
+}
+
+footer .footer-bottom .logo h1{
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--white-color);
+}
+
+footer .rights-reserved p{
+    color: var(--white-color-light);
+    margin-top: 12px;
+}
+
+footer .social-icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+footer .social-icons li i{
+    font-size: 15px;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    padding: 5px;
+    transition: .2s ease-in-out;
+}
+}
+
+
+@media screen and (max-width: 375px) {
+body{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+nav .logo img{
+    width: 25px;
+}
+
+nav .hamburger{
+    display: block;
+}
+
+nav .hamburger i{
+    font-size: 23px;
+    transition: .3s;
+}
+
+nav .hamburger i:hover{
+    font-size: 24px;
+    transform: rotate(360deg);
+}
+
+nav .hamburger .times{
+    display: none;
+}
+
+nav .menu{
+    background-color: var(--white-color);
+    width: 100%;
+    height: 0;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 1.45%;
+    left: 0;
+    transition: .1s;
+}
+
+nav .menu ul{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 0;
+    margin-top: 0;
+    display: none;
+    text-align: center;
+    padding-top: 50px;
+}
+
+nav .menu li{
+    padding-top: 100px;
+    list-style: none;
+    transition: .2s;
+}
+
+nav .menu li a{
+    background-color: var(--primary-color1);
+    border-radius: 25px;
+    padding: 25px 100px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* SECTION1 */
+.section1{
+    width: 100%;
+    background-color: var(--primary-color1);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section1 .section1-text{
+    text-align: center;
+    padding-top: 27%;
+}
+
+.section1 .section1-text h1{
+    word-spacing: 3px;
+    font-size: 37px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.section1 .section1-text p{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section1 .section1-text button{
+    margin-top: 45px;
+    color: var(--white-color);
+    background-color: var(--primary-color1);
+    border: 2px solid var(--white-color);
+    border-radius: 25px;
+    padding: 15px 40px;
+    transition: .2s;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section1 .section1-text button i{
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.section1 .section1-img{
+    margin-top: 70px;
+}
+
+.section1 .section1-img img{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/* ABOUT RIBI */
+.section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 20px 5%;
+    gap: 50px;
+    background-color: var(--primary-color4);
+}
+
+.section2 .section2-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+}
+
+.section2 .section2-boxes-1{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section2 .section2-boxes-2{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section2 .section2-box-content{
+    border: 1px solid var(--primary-color1);
+    width: 250px;
+    height: 180px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.section2 .section2-box-content img{
+    width: 85px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+}
+
+.section2 .section2-box-content .find-blood{
+    width: 65px;
+    margin: 35px auto 0 auto;
+}
+
+.section2 .section2-box-content p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* ABOUT RIBI TEXT */
+.section2 .section2-text{
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 20px 50px 0;
+    border-bottom: 2px solid var(--primary-color2);
+}
+
+.section2 .section2-text h2{
+    color: var(--primary-color2);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline var(--primary-color2);
+}
+
+.section2 .section2-text p{
+    color: var(--dark-color1);
+    line-height: 25px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.section2 .section2-text button{
+    background-color: var(--primary-color2);
+    border: none;
+    padding: 20px 50px;
+    border-radius: 25px;
+    color: var(--white-color);
+    margin-top: 30px;
+    transition: .2s;
+}
+
+.section2 .section2-text button i{
+    font-size: 10px;
+}
+
+.section2 .section2-text button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    background-color: var(--primary-color1);
+}
+
+/* BLOOD TYPES */
+.section3{
+    background-color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section3 .section3-title h2{
+    color: var(--primary-color2);
+    text-align: center;
+    font-size: 40px;
+}
+
+.section3 .section3-boxes-1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-boxes-2{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-box-content{
+    display: flex;
+    border-radius: 10px;
+    width: 250px;
+    height: 120px;
+    margin: 30px 30px;
+    background-color: var(--white-color);
+    border: 2px soild var(--primary-color4);
+    box-shadow: 0px 0px 10px var(--primary-color1);
+    transition: .4s;
+}
+
+
+.section3 .section3-box-content img{
+    padding-top: 10px;
+    width: 55px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* DONATIONS */
+.section4{
+    background-color: var(--primary-color1);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 100vh;
+}
+
+.section4 .section4-title p{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 30px 30px 0 30px;
+}
+
+.section4 .section4-boxes{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 3%;
+}
+
+.section4 .section4-box-content{
+    background-color: var(--white-color);
+    margin: 0px 30px;
+    width: 90%;
+    height: 35vh;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.section4 .section4-box-content h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    color: var(--dark-color1);
+}
+
+.section4 .section4-box-content p{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    color: var(--dark-color4);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.section4 .section4-box-content .donate-p{
+    margin-bottom: 25px;
+}
+
+.section4 .section4-box-content a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section4 .section4-box-content a i{
+    font-size: 15px;
+}
+
+.section4 .section4-box-content a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* HOW IT WORKS */
+.section5{
+    position: relative;
+    width: 100%;
+    height: 88vh;
+    margin-top: -30px;
+    background-color: var(--primary-color4);
+}
+
+.section5 .section5-title h2{
+    text-align: center;
+    color: var(--primary-color2);
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.section5 .section5-contents{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 40px 10%;
+}
+
+.section5 .section5-img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.section5 .section5-img img{
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid var(--primary-color3);
+    transition: .5s;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.section5 .section5-texts{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: justify;
+    width: 100%;
+}
+
+.section5 .section5-texts p{
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+}
+
+.section5 .section5-texts ul{
+    position: absolute;
+    top: 65%;
+    right: 0;
+    left: 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.section5 .section5-texts li{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section5 .section5-texts li:before{
+    content: '\2022';
+    color: var(--primary-color1);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 25px;
+}
+
+/* FOOTER */
+footer h2{
+    text-align: center;
+    padding: 7% 10px;
+    font-weight: 700;
+}
+
+footer p{
+    padding: 0px 50px 0 50px;
+    margin-top: 3px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--white-color-light);
+}
+
+footer .footer-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6%;
+}
+
+footer hr{
+    margin: 6% auto;
+    border: 1px solid var(--white-color-light);
+    width: 55%;
+}
+
+footer .footer-bottom{
+    height: 20vh;
+    margin-top: -5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-bottom .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+footer .footer-bottom .logo img{
+    width: 22px;
+}
+
+footer .footer-bottom .logo h1{
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--white-color);
+}
+
+footer .rights-reserved p{
+    color: var(--white-color-light);
+    margin-top: 12px;
+}
+
+footer .social-icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+footer .social-icons li i{
+    font-size: 15px;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    padding: 5px;
+    transition: .2s ease-in-out;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 300px) {
+body{
+    width: 100%;
+    position: relative;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+nav .logo img{
+    width: 25px;
+}
+
+nav .hamburger{
+    display: block;
+}
+
+nav .hamburger i{
+    font-size: 23px;
+    transition: .3s;
+}
+
+nav .hamburger i:hover{
+    font-size: 24px;
+    transform: rotate(360deg);
+}
+
+nav .hamburger .times{
+    display: none;
+}
+
+nav .menu{
+    background-color: var(--white-color);
+    width: 100%;
+    height: 0;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: 1.4%;
+    left: 0;
+    transition: .1s;
+}
+
+nav .menu ul{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 0;
+    margin-top: 0;
+    display: none;
+    text-align: center;
+    padding-top: 50px;
+}
+
+nav .menu li{
+    padding-top: 100px;
+    list-style: none;
+    transition: .2s;
+}
+
+nav .menu li a{
+    background-color: var(--primary-color1);
+    border-radius: 25px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* SECTION1 */
+.section1{
+    width: 100%;
+    background-color: var(--primary-color1);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.section1 .section1-text{
+    text-align: center;
+    padding-top: 27%;
+}
+
+.section1 .section1-text h1{
+    word-spacing: 3px;
+    font-size: 37px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.section1 .section1-text p{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section1 .section1-text button{
+    margin-top: 45px;
+    color: var(--white-color);
+    background-color: var(--primary-color1);
+    border: 2px solid var(--white-color);
+    border-radius: 25px;
+    padding: 15px 40px;
+    transition: .2s;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section1 .section1-text button i{
+    color: var(--white-color);
+    font-size: 15px;
+}
+
+.section1 .section1-img{
+    margin-top: 70px;
+}
+
+.section1 .section1-img img{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/* ABOUT RIBI */
+.section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 20px 5%;
+    gap: 50px;
+    background-color: var(--primary-color4);
+}
+
+.section2 .section2-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+}
+
+.section2 .section2-boxes-1{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section2 .section2-boxes-2{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section2 .section2-box-content{
+    border: 1px solid var(--primary-color1);
+    width: 200px;
+    height: 180px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.section2 .section2-box-content img{
+    width: 85px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+}
+
+.section2 .section2-box-content .find-blood{
+    width: 65px;
+    margin: 35px auto 0 auto;
+}
+
+.section2 .section2-box-content p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* ABOUT RIBI TEXT */
+.section2 .section2-text{
+    margin-top: 30px;
+    text-align: justify;
+    padding: 0 20px 50px 20px;
+    border-bottom: 2px solid var(--primary-color2);
+}
+
+.section2 .section2-text h2{
+    color: var(--primary-color2);
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline var(--primary-color2);
+}
+
+.section2 .section2-text p{
+    color: var(--dark-color1);
+    line-height: 25px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.section2 .section2-text button{
+    background-color: var(--primary-color2);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: var(--white-color);
+    margin-top: 30px;
+    transition: .2s;
+}
+
+.section2 .section2-text button i{
+    font-size: 10px;
+}
+
+.section2 .section2-text button:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    background-color: var(--primary-color1);
+}
+
+/* BLOOD TYPES */
+.section3{
+    background-color: var(--white-color);
+    margin-top: 30px;
+}
+
+.section3 .section3-title h2{
+    color: var(--primary-color2);
+    text-align: center;
+    font-size: 30px;
+}
+
+.section3 .section3-boxes-1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-boxes-2{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.section3 .section3-box-content{
+    display: flex;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    margin: 30px 30px;
+    background-color: var(--white-color);
+    border: 2px soild var(--primary-color4);
+    box-shadow: 0px 0px 10px var(--primary-color1);
+    transition: .4s;
+}
+
+
+.section3 .section3-box-content img{
+    padding-top: 10px;
+    width: 55px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* DONATIONS */
+.section4{
+    background-color: var(--primary-color1);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 116vh;
+}
+
+.section4 .section4-title p{
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 30px 10px 0 10px;
+}
+
+.section4 .section4-boxes{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 3%;
+}
+
+.section4 .section4-box-content{
+    background-color: var(--white-color);
+    margin: 0px 30px;
+    width: 90%;
+    height: 40vh;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+
+.section4 .section4-box-content h2{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+    color: var(--dark-color1);
+}
+
+.section4 .section4-box-content p{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    color: var(--dark-color4);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.section4 .section4-box-content .donate-p{
+    margin-bottom: 25px;
+}
+
+.section4 .section4-box-content a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section4 .section4-box-content a i{
+    font-size: 15px;
+}
+
+.section4 .section4-box-content a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* HOW IT WORKS */
+.section5{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: -30px;
+    background-color: var(--primary-color4);
+}
+
+.section5 .section5-title h2{
+    text-align: center;
+    color: var(--primary-color2);
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.section5 .section5-contents{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 40px 10%;
+}
+
+.section5 .section5-img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.section5 .section5-img img{
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid var(--primary-color3);
+    transition: .5s;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.section5 .section5-texts{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: justify;
+    width: 100%;
+}
+
+.section5 .section5-texts p{
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+}
+
+.section5 .section5-texts ul{
+    position: absolute;
+    top:69%;
+    right: 0;
+    left: 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.section5 .section5-texts li{
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.section5 .section5-texts li:before{
+    content: '\2022';
+    color: var(--primary-color1);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 25px;
+}
+
+/* FOOTER */
+footer h2{
+    text-align: center;
+    padding: 7% 10px;
+    font-weight: 700;
+}
+
+footer p{
+    padding: 10px 30px 0 30px;
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--white-color-light);
+}
+
+footer .footer-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 13%;
+}
+
+footer hr{
+    margin: 6% auto;
+    border: 1px solid var(--white-color-light);
+    width: 55%;
+}
+
+footer .footer-bottom{
+    height: 23vh;
+    margin-top: -5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .footer-bottom .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+footer .footer-bottom .logo img{
+    width: 22px;
+}
+
+footer .footer-bottom .logo h1{
+    font-size: 17px;
+    font-weight: lighter;
+    color: var(--white-color);
+}
+
+footer .rights-reserved p{
+    color: var(--white-color-light);
+    margin-top: 12px;
+}
+
+footer .social-icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+footer .social-icons li i{
+    font-size: 15px;
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+    padding: 5px;
+    transition: .2s ease-in-out;
+}
+
+}
